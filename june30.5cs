@@ -1,0 +1,30 @@
+﻿using System;
+
+namespace june31
+{
+    class Program
+    {
+        public void count()
+        {
+            string name;
+            Console.WriteLine("enter string the value");
+            name=Console.ReadLine();
+            int wordcount=0;
+            for(int i=0;i<name.Length-1;i++)
+            {
+                if(name[i]==' ' && char.IsLetter(name[i+1])&&(i>0))
+                {
+                    wordcount++;
+
+                }
+            }
+            Console.WriteLine("total number of words in the given string:"+wordcount);
+            Console.ReadLine();
+
+
+
+
+
+        }
+    }
+}

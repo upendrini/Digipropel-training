@@ -1,35 +1,23 @@
 ﻿using System;
 
-namespace june28
+namespace june31
 {
-    class june1
+    class Program
     {
         static void Main(string[] args)
-        { 
-            int[]  a=new int[5];
-            int i,n,sum=0;
-            Console.Write("enter the number of elements to be stored in array:");
-           n= Convert.ToInt32(Console.ReadLine());
-           Console.Write("enter{0} elements in the array:\n",n);
-           for(i=0;i<n;i++)
-           {
-               Console.Write("elements-{0}:",i);
-               a[i]=Convert.ToInt32(Console.ReadLine());
+        {
+            string str;
+            int i=0;
+            Console.Write("\n find the length of a string:\n");
+            Console.Write("input the string:");
+            str=Console.ReadLine();
+            foreach(char chr in str)
+            {
+               i+=1; 
+            }
 
-           }
-           for(i=0;i<n;i++)
-           {
-               sum+=a[i];
-           }
-           Console.Write("sumof all the elements in the array:" +sum);
-           Console.ReadLine();
+            Console.Write("length of the string is:{0}\n\n",i);
         }
-        
-
-
-           
-               
-
 
         
     }
