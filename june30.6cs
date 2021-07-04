@@ -1,0 +1,22 @@
+﻿using System;
+
+namespace june30
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str1="the quick brown fox jumps over the lazy dog.";
+            Console.WriteLine("original string:" +str1);
+            Console.WriteLine("position of the word'fox' in the said string:"+test(str1,"fox"));
+            Console.WriteLine("positionof the word'the'in the said string: " +test(str1,"the"));
+            Console.WriteLine("position of the word 'lazy'in the said string:" +test(str1,"lazy"));
+
+        }
+         public static int test(string text,string word)
+        {
+            return Array.IndexOf(text.Split(' '),word)+1;
+
+        }
+    }
+}
