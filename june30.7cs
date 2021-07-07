@@ -1,0 +1,20 @@
+﻿using System;
+
+namespace aug1
+{
+    class june307
+    {
+            static void Uppercase()
+        {
+            string message;
+            Console.WriteLine("enter the string to convert to uppercase:");
+            message = Console.ReadLine();
+            Console.WriteLine("the output string after converting to uppercase:" + test(message));
+
+        }
+        public static string test(string message)
+        {
+            return string.Join(" ", message.Split(' ').Select(message => char.ToUpper(message[0]) + message.Substring(1)));
+        }
+    }
+}
