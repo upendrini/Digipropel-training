@@ -1,0 +1,26 @@
+﻿using System;
+
+namespace july5
+{
+    class july57
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("program to check the leap year or not");
+            Console.WriteLine("enter the year");
+            int year=Convert.ToInt32(Console.ReadLine());
+            if((year%400) == 0 )
+            {
+                Console.WriteLine("{0} is a leap year",year);
+            }
+            else if((year%100)==0)
+            {
+                Console.WriteLine("{0} is not a leapyear",year );
+            }
+            else if((year%10)==0)
+            {
+                 Console.WriteLine("{0}is a leap year",year);
+            }
+        }
+    }
+}
